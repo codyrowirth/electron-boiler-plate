@@ -4,15 +4,29 @@
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <title></title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/bootstrap-5.0.2-dist/css/bootstrap.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-
+    <div class="border-area">
+      <h2 class="text-area">Submit A Complement</h2>
+    </div>
+    <div class="content-block">
+      <div class="input-group">
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+      </div>
+      <div id="paragraph">
+      </div>
+      </div>
+    </div>
+    <div class="button-styles">
+      <button type="button" id="paragraph" class="btn btn-success">Recieve Complement</button>
+    </div>
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
+    <script src="./main.js"></script>
+    <script scr="./styles/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
   </body>
 </html>

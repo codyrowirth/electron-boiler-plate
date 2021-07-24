@@ -1,0 +1,55 @@
+@import "~bootstrap/scss/bootstrap";
+
+.content-block {
+}
+
+body {
+  background: #114357; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #114357, #f29492); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #114357, #f29492); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.button-styles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 250px;
+}
+
+.input-group-text {
+  width: 25% !important;
+  flex: none !important;
+}
+
+.input-group {
+  width: 85% !important;
+  position: relative;
+  top: 219px;
+}
+
+.content-block {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.text-area {
+  text-align: center;
+  top: 186px;
+  position: relative !important;
+  color: white;
+  border-top: white 1.5px;
+  border-bottom: white;
+  border-left: white;
+  border-right: white;
+}
+
+
+
+/* .input-group-prepend {
+  position: relative;
+  left: 21pc;
+} */
+
+
