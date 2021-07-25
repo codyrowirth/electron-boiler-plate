@@ -4,9 +4,9 @@
 }
 
 body {
-  background: #114357; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #114357, #f29492); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #114357, #f29492); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #f46b45; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f46b45, #eea849); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f46b45, #eea849);
 }
 
 .button-styles {
