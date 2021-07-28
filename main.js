@@ -23,7 +23,7 @@ function createWindow () {
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.whenReady().then(() => {
-  createWindow()
+  createWindow();
 
   app.on('activate', function () {
     // On macOS it's common to re-create a window in the app when the
@@ -41,3 +41,28 @@ app.on('window-all-closed', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+
+$.ajax({
+  url: 'https://api.wit.ai/api?v=20140826&q=',
+  beforeSend: function(xhr) {
+       xhr.setRequestHeader("Authorization", "Bearer $TOKEN"),
+       xhr.setRequestHeader("Content-Type", "application/json")
+       data: [{
+        "text": "I want to fly to sfo",
+        "intent": "flight_request",
+        "entities": [
+          {
+            "entity": "wit$location:to",
+            "start": 17,
+            "end": 20,
+            "body": "sfo",
+            "entities": []
+          }
+        ],
+        "traits": []
+      }]
+  }, success: function(data){
+      alert(data);
+      //process the JSON data etc
+  }
+})
